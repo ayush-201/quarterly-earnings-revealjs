@@ -1,0 +1,10 @@
+.reveal {
+  font-family: 'Arial', sans-serif;
+}
+.reveal .slides section {
+  padding: 20px;
+}
+
+.reveal .slides section.has-dark-background {
+  color: #fff;
+}
