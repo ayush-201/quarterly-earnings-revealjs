@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
   <link rel="stylesheet" href="css/custom.css">
+  <style>
+    .footer-email {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      font-size: 14px;
+      color: #666;
+      font-family: Arial, sans-serif;
+      z-index: 9999;
+      opacity: 0.7;
+      pointer-events: none; /* Avoid interfering with clicks */
+    }
+  </style>
 </head>
 <body>
   <div class="reveal">
@@ -16,10 +29,9 @@
       <section>
         <h1>Quarterly Earnings Report</h1>
         <p>Technical Consultant, Major Financial Institution</p>
-        <p><strong>Email:</strong> 24f1002092@ds.study.iitm.ac.in</p>
         <aside class="notes">
           Welcome stakeholders. This presentation demonstrates interactive RevealJS features for our quarterly report.
-          My contact details are available on this slide.
+          My contact details are available in the footer.
         </aside>
       </section>
 
@@ -94,6 +106,10 @@ print(df['Revenue'].describe())
 
     </div>
   </div>
+
+  <!-- Email footer visible on all slides -->
+  <div class="footer-email">Email: 24f1002092@ds.study.iitm.ac.in</div>
+
   <!-- RevealJS Core -->
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
   <!-- Plugins -->
