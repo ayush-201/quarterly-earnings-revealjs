@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- RevealJS core styles -->
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" id="theme">
+  <!-- Plugin styles -->
+  <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1: Title & Email -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <p>Technical Consultant: <strong>24f1002092@ds.study.iitm.ac.in</strong></p>
+        <aside class="notes">
+          Welcome stakeholders. This report summarizes financial outcomes, key metrics, and modern data visualization techniques.
+        </aside>
+      </section>
+
+      <!-- Slide 2: Markdown Content -->
+      <section data-markdown>
+        <textarea data-template>
+### Revenue Highlights
+
+- **Q1 Revenue:** $12.7M
+- **Q2 Revenue:** $13.9M
+- **Growth:** +9.4% YoY
+
+---
+
+### Important Notes
+
+- Operating margin improved
+- Strong customer acquisition
+        </textarea>
+        <aside class="notes">This slide is fully generated from Markdown for easy editing and content updating.</aside>
+      </section>
+
+      <!-- Slide 3: Animated Elements (Fragments) -->
+      <section>
+        <h2>Financial Drivers</h2>
+        <ul>
+          <li class="fragment">Net interest income rose 5.8%</li>
+          <li class="fragment">Non-interest income increased 11%</li>
+          <li class="fragment fade-up">Expense reduction initiatives launched</li>
+        </ul>
+        <aside class="notes">Discuss each financial driver as it appears for emphasis and clarity.</aside>
+      </section>
+
+      <!-- Slide 4: Code Sample with Highlighting -->
+      <section>
+        <h2>Data Analysis: Python Example</h2>
+        <pre>
+<code class="python" data-line-numbers="1-2|4,6-7|9">
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load CSV
+df = pd.read_csv('earnings.csv')
+df['Quarter'] = ['Q1', 'Q2', 'Q3', 'Q4']
+
+# Plot revenue
+plt.bar(df['Quarter'], df['Revenue'])
+plt.show()
+</code>
+        </pre>
+        <aside class="notes">Show how financial data is analyzed for reporting. Python and code highlighting improves technical communication.</aside>
+      </section>
+
+      <!-- Slide 5: Financial Formula (MathJax) -->
+      <section>
+        <h2>Net Interest Margin</h2>
+        <p>
+          \[
+            \text{Net Interest Margin} = \frac{\text{Interest Income} - \text{Interest Expense}}{\text{Average Earning Assets}}
+          \]
+        </p>
+        <aside class="notes">Provide mathematical definitions for critical finance KPIs. This enables data-driven decision-making.</aside>
+      </section>
+
+      <!-- (Optional) Slide 6: Live Demo (iframe) & Data Visualization -->
+      <section>
+        <h2>Live Portfolio Demo</h2>
+        <iframe data-src="https://example.com/earnings-demo" width="700" height="400" data-preload></iframe>
+        <aside class="notes">Show interactive dashboard or demo. Replace link with real prototype.</aside>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- RevealJS core script -->
+  <script src="node_modules/reveal.js/dist/reveal.js"></script>
+  <!-- Plugins -->
+  <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="node_modules/reveal.js/plugin/math/math.js"></script>
+  <script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+
+  <!-- Initialize RevealJS -->
+  <script>
+    Reveal.initialize({
+      width: 1280,
+      height: 720,
+      margin: 0.04,
+      controls: true,
+      progress: true,
+      history: true,
+      transition: "slide",
+      plugins: [
+        RevealMarkdown,
+        RevealHighlight,
+        RevealMath,
+        RevealNotes
+      ],
+    });
+  </script>
+</body>
+</html>
